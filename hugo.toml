@@ -1,0 +1,28 @@
+baseURL = "https://arandomconstant.online/"
+languageCode = "en-us"
+title = "A Random Constant"
+
+# Number of posts to show on list pages
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = "A random constant - musings of a systems thinker"
+  author = "a-random-constant"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    pageRef = "/posts"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 3
+
+[markup.goldmark.renderer]
+  unsafe = true
