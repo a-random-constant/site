@@ -9,10 +9,7 @@ theme = "color-your-world"
 
 [params]
   description = "A random constant - musings of a systems thinker"
-
-  [params.author]
-    name = "a-random-constant"
-    # email = "arandomconstant@gmail.com"
+  author = "a-random-constant"
 
   [params.style]
     # Accent colors for dark and light mode respectively (green)

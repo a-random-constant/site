@@ -48,8 +48,11 @@ jobs:
         run: |
           hugo \
             --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --minify
+            # baseURL intentionally not overridden: uses the custom domain
+            # set in hugo.toml (https://arandomconstant.online/). The Pages
+            # default URL (steps.pages.outputs.base_url) would inject a
+            # "/site/" project path and break asset links on the custom domain.
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
