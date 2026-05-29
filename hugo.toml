@@ -1,6 +1,7 @@
 baseURL = "https://arandomconstant.online/"
 languageCode = "en-us"
 title = "A Random Constant"
+theme = "color-your-world"
 
 # Number of posts to show on list pages
 [pagination]
@@ -8,7 +9,19 @@ title = "A Random Constant"
 
 [params]
   description = "A random constant - musings of a systems thinker"
-  author = "a-random-constant"
+
+  [params.author]
+    name = "a-random-constant"
+    # email = "arandomconstant@gmail.com"
+
+  [params.style]
+    # Accent colors for dark and light mode respectively (green)
+    darkAccent  = "#3fb950"
+    lightAccent = "#1a7f37"
+    presets     = [ "#1a7f37", "#3fb950", "#1dbc91", "#3e6728", "#7fc121" ]
+
+[markup.highlight]
+  noClasses = false
 
 [menu]
   [[menu.main]]
